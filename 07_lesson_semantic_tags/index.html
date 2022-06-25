@@ -10,11 +10,19 @@
     <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 
+<!-- semantic tags gives meaning to webpage and enables quick reading and navigation of webpage.eg. nav tag, hr(horizontal rule), section. they are also generic dividers of webpage, semantic tags make accessible the webpage to screen readers, browsers and assisted technology for better seo, other tags header, main, footer -> added in this webpage -->
+
 <body>
+    <!-- can be more than one headers in a page, eg social media site where each post has its own header -->
     <header>
         <h1>My Goals for the Year</h1>
 
         <nav aria-label="primary-navigation">
+            <!-- if more than one label, then good practice to label them for assisted tech reading -->
+            <!-- if had heading in nav bar then can link it to the navbar for better seo 
+            <nav aria-labelledby="primary-navigation">
+            <h2 id="primary-navigation">Primary Navigation</h2>    
+            -->
             <ul>
                 <li>
                     <a href="#html">Learning HTML</a>
@@ -27,10 +35,13 @@
     </header>
 
     <hr>
+    <!-- main element is for the whole content on the webpage -->
     <main>
+        <!-- changed to article cause it has a clear topic for content instead of sections, both have same seo -->
         <article id="html">
             <h2>I'm Ready to Learn HTML</h2>
             <p>This is my first web page.</p>
+            <!-- sections are used for more general purposes -->
             <section>
                 <h3>HTML5</h3>
                 <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="I am learning HTML5" width="300"
@@ -52,62 +63,19 @@
                             <a href="https://developer.mozilla.org/">MDN</a>
                         </abbr>.</li>
                 </ol>
-                <aside>
-                    <details>
+                
+                <aside> <!-- aside generally used for sidebar but can also be used as less important content than sections and articles -->
+                    <details> <!-- can provide detais about product, its warranty, etc, does provide a dropdown if want to take look at details of product -->
+                        <!-- mark -> highlights the text in yellow -->
                         <summary>Guess the <mark>number of hours</mark> I code per day</summary>
-                        <p>I start at <time datetime="08:00">8 am</time> and I write code for <time datetime="PT3H">3
-                                hours</time> every morning.</p>
+                        <p>
+                            I start at <time datetime="08:00">8 am</time> and I write code for <time datetime="PT3H">3 hours</time> every morning.
+                        </p>
                     </details>
                 </aside>
-                <br>
-                <table>
-                    <caption>My Daily Schedule</caption>
-                    <thead>
-                        <tr>
-                            <th>&nbsp;</th>
-                            <th scope="col">Time</th>
-                            <th scope="col">Activity</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Morning</th>
-                            <td>
-                                <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
-                            </td>
-                            <td>Write Code</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Break</th>
-                            <td>
-                                <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
-                            </td>
-                            <td>Eat Lunch</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Afternoon</th>
-                            <td>
-                                <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time>
-                            </td>
-                            <td>Study for Other Courses</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Evening</th>
-                            <td rowspan="2">All Other Times</td>
-                            <td>Free Time</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Night</th>
-                            <td>Sleep</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="3">And that's what I do every day, 5 days a week. Just eat, sleep, code ..and
-                                recharge!</td>
-                        </tr>
-                    </tfoot>
-                </table>
+
+                <!-- avoid div and span as much as possible as they do not have any semantic signficance, they are just dividers -->
+
             </section>
         </article>
 
@@ -148,7 +116,6 @@
                     </li>
                 </ul>
             </section>
-            <!-- TODO: Add more places -->
             <section>
                 <h3>Places I Want to Avoid</h3>
                 <dl>

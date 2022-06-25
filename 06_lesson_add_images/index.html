@@ -31,7 +31,12 @@
     <section id="html">
         <h2>I'm Ready to Learn HTML</h2>
         <p>This is my first web page.</p>
+        
         <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="I am learning HTML5" width="300" height="300">
+        <!-- title is complementory -> hover on the image and displays the text, browser cannot read the title and webpage is complete without it.
+        adding width and height is recommended to prevent cumulative shift, whenever images load then the browser renders and everything below it shifts down due to the space taken by the image so beforehand telling browser that there is an element here. it can be override by css -> alt -> if image does not load (due to broken address, etc) then the text is displayed -->
+        
+        <!-- figure is not only for images, figcaption can be at the bottom or the top of the element, code displays text in code font and have to use entities here or else will treat it as a tag -->
         <figure>
             <figcaption>An Example of HTML5 code</figcaption>
             <p>
@@ -60,9 +65,12 @@
         <ul>
             <li>
                 <p>I've heard good things about the Caribbean.</p>
-                <figure>
+                <figure> 
+                    <!-- enclose img inside figure so that assisted tech knows that and also can add caption to the image that browser or assisted tech can read, autoformating in the browser for the image -->
                     <img src="img/caribbean.jpg" alt="Caribbean Beach" title="I want to visit a Caribbean beach."
                         width="400" height="225" loading="lazy">
+                        <!-- default loading value -> eager, use lazy when need to scroll to in the webpage to view this image, it only loads when we are close enough in the scrolling to the image, hence webpage loads faster
+                        to see demo of this, create much space using br or anything in the html, open inspect element in browser, network tab, disable cache(browsers store images to display the webpage faster next time), and in img tab, will see only the first image is shown, then scroll and see that the second image gets entered -->
                     <figcaption>
                         Caribbean Beach Getaway
                     </figcaption>
@@ -84,7 +92,6 @@
                 </figure>
             </li>
         </ul>
-        <!-- TODO: Add more places -->
         <h3>Places I Want to Avoid</h3>
         <dl>
             <dt>North Pole</dt>

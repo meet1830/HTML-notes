@@ -9,7 +9,7 @@
     <link rel="icon" href="html5.png" type="image/x-icon">
     <link rel="stylesheet" href="main.css" type="text/css">
 </head>
-
+<!-- Character entities are used to display reserved characters in HTML. If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags. not break into new line space -> nbsp - entities exist for &, '', "", copyright, registered trademark, etc -->
 <body>
     <h1>Hello World!</h1>
 
@@ -20,7 +20,7 @@
 
     <h3>My Daily Schedule</h3>
     <p>Let me tell you how:
-        <br>&nbsp;&nbsp;&nbsp;...I learn more about web dev.
+        <br>&nbsp;&nbsp;&nbsp;...I learn more about web dev. <!-- if want some indentation in text -> by default html does not identify spaces given using space bar -> entities generally defined using & -> used three of them -> eg of inline element -->
         <br>&nbsp;&nbsp;&nbsp;...I plan out my schedule.
         <br>&nbsp;&nbsp;&nbsp;...I use resources from <abbr title="Mozilla Developer Network">MDN</abbr>.
     </p>
@@ -29,7 +29,8 @@
 
     <h2>I Am Also Planning a Vacation</h2>
     <p>I've been working hard and <em>really need a getaway</em>.</p>
-    <p>I live in <abbr title="Kansas">KS</abbr> so I want visit a beach.</p>
+    <p>I live in <abbr title="Kansas">KS</abbr> so I want visit a beach.</p> 
+    <!-- abbr = abbreviation, with title attribute -> shows underline on text and when hover mouse displays title text -->
 
     <h3>Place I'd Like to Visit</h3>
     <p>I've heard good things about the Caribbean.</p>
@@ -39,12 +40,14 @@
         Bahia Petempich Puerto Morelos, Mexico<br>
         Colonia Morelos, México 77580
     </address>
+    <!-- italisized. browser knows that its an address -->
 
-    <!-- TODO: Add more places -->
     <h3>Place I Want to Avoid</h3>
     <p>Anywhere cold. <strong>No way!</strong></p>
 
     <hr>
+
+    <!-- lt(less than) = <, copy(copyright), greater than -->
     &lt;&lt;&lt; &copy; Dave Gray &gt;&gt;&gt;
 </body>
 
